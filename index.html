@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bullying</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <style>
+        #p1 {
+            background-color: black;
+            height: calc(100vw*0.47);
+            width: 100vw;
+            position: fixed;
+            z-index: 99;
+            top: 0vh;
+            opacity: 0;
+        }
+
+        .fadein {
+            animation: fadein 0.5s ease;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fadeout {
+            animation: fadeout 0.5s ease;
+        }
+
+        @keyframes fadeout {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+    <div style="background-color:black;height:105vh;z-index: -9999">
+        <p
+            style="text-align: center;position: absolute;right:38%;top:40%;color: white;font-size: 25px;font-weight: bold;">
+            那天，我放學正急著趕回家<br>經過天橋時發現有好多人在那...</p>
+    </div>
+
+    <div class="innershadow1" id="div5" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-left=-10 data-left2=-20 data-top=-2 data-top2=48
+            src="assets/Background.png" style="position:absolute;height:110vh;top:-2%;left:-10%;z-index:1">
+
+        <img class="scrollable dropshadow1" data-left=-10 data-left2=-50 data-top=-2 data-top2=48
+            src="assets/BG-export.png" style="position:absolute;height:110vh;top:-2%;left:-10%;z-index:1">
+
+        <img class="scrollable dropshadow1" data-left=-2 data-left2=25 data-top=17 data-top2=67
+            src="assets/Yonny_walk1.gif" style="position:absolute;width:8%;top:17%;left:-2%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=50 data-left2=19 data-top=19 data-top2=69 src="assets/B.png"
+            style="position:absolute;width:5.5%;top:19%;left:50%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=55 data-left2=21 data-top=19 data-top2=69 src="assets/C.png"
+            style="position:absolute;width:5.5%;top:19%;left:55%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=75 data-left2=41 data-top=19 data-top2=69 src="assets/E.png"
+            style="position:absolute;width:5.5%;top:19%;left:75%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=60 data-left2=27 data-top=19 data-top2=69 src="assets/D.png"
+            style="position:absolute;width:5.5%;top:19%;left:60%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=65 data-left2=34 data-top=28 data-top2=78 src="assets/flower.png"
+            style="position:absolute;width:8%;top:28%;left:65%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=-10 data-left2=-45 data-top=-2 data-top2=48
+            src="assets/footbridge.png" style="position:absolute;top:-2%;height:110vh;left:-10%;z-index:3">
+        <img id="p1" src="assets/desk.png"></img>
+
+    </div>
+    <!--     
+    <div style="background-color:black;height:40vh"></div> -->
+
+    <div class="innershadow1" id="div5" style="background-color:black;height:200vh;position:relative;">
+        <img class="scrollable dropshadow1" data-left=-60 data-left2=-110 data-top=-2 data-top2=48
+            src="assets/Background.png" style="position:absolute;height:110vh;top:-2%;left:-60%;z-index:1">
+
+        <img class="scrollable dropshadow1" data-left=-60 data-left2=-110 data-top=-2 data-top2=48
+            src="assets/BG-export.png" style="position:absolute;height:110vh;top:-2%;left:-60%;z-index:1">
+
+        <img class="scrollable dropshadow1" data-left=40 data-left2=100 data-top=17 data-top2=67
+            src="assets/Yonny_walk1.gif" style="position:absolute;width:8%;top:17%;left:45%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=19 data-left2=-30 data-top=19 data-top2=69 src="assets/B.png"
+            style="position:absolute;width:5.5%;top:19%;left:19%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=21 data-left2=-25 data-top=19 data-top2=69 src="assets/C.png"
+            style="position:absolute;width:5.5%;top:19%;left:21%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=41 data-left2=-6 data-top=19 data-top2=69 src="assets/E.png"
+            style="position:absolute;width:5.5%;top:19%;left:41%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=27 data-left2=-17 data-top=19 data-top2=69 src="assets/D.png"
+            style="position:absolute;width:5.5%;top:19%;left:27%;z-index:2">
+
+        <img class="scrollable dropshadow1" data-left=34 data-left2=-10 data-top=28 data-top2=78 src="assets/flower.png"
+            style="position:absolute;width:8%;top:28%;left:34%;z-index:2">
+        <img class="scrollable dropshadow1" data-left=-60 data-left2=-110 data-top=-2 data-top2=48
+            src="assets/footbridge.png" style="position:absolute;top:-2%;height:110vh;left:-60%;z-index:3">
+        <img class="scrollable dropshadow1" data-left=-60 data-left2=-110 data-top=-2 data-top2=48
+            src="assets/footbridge.png" style="position:absolute;top:-2%;height:110vh;left:-60%;z-index:3">
+        <p style="position:absolute;font-size: 25px;font-weight: bold;color: white;z-index: 4;top: 85vh;left:35vw;">不知道發生什麼事...還是先回家好了</p>
+
+    </div>
+    <div style="height:105vh;background-color: black;position: relative;">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4" style="font-size: 20px;font-weight: bold;color: white;top:30vh;text-align: center;">
+            後來我才得知，那天隔壁班的同學又被霸凌。
+            <br>他的桌椅被人故意丟棄到天橋上。
+            <br>
+            <br>不知為何，後來桌上多了一個花瓶。
+            <br>但那位同學就此失蹤了...
+
+            <br><br><br><br><br><br><br>
+            文字：傅書軒
+            <br>製圖：傅書軒/吳彩琳/楊蕙瑄
+        </div>
+        <div class="col-4"></div>
+        
+
+
+    </div>
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var winh = $(window).height();
+            $(window).scroll(function () {
+                var scrolled = $(window).scrollTop();
+                $(".scrollable").each(function () {
+                    var parent_pos = $(this).parent().offset().top;
+                    var next_pos = parent_pos + $(this).parent().height();
+                    var parent_scrolled = scrolled - $(this).parent().offset().top;
+                    var played = 0
+
+                    if (parent_scrolled > 0 && scrolled < next_pos - (1.05 * winh)) {
+
+                        if ($(this).attr("data-left")) {
+                            $(this).css('left', (($(this).data('left2') - $(this).data(
+                                'left')) * parent_scrolled / winh + $(this).data(
+                                'left')) + '%');
+                        }
+                        if ($(this).attr("data-top")) {
+                            $(this).css('top', (($(this).data('top2') - $(this).data('top')) *
+                                parent_scrolled / winh + $(this).data('top')) + '%');
+                        }
+                    }
+
+                    if (played == 0 && scrolled > 1100) {
+                        $("#p1").addClass('fadein');
+                        $("#p1").css('opacity', 1);
+                        played = 1;
+                    }
+                    if (scrolled > 1700) {
+                        $("#p1").addClass('fadeout');
+                        $("#p1").css('opacity', '0');
+
+                    }
+                    if (scrolled < 1100) {
+                        $("#p1").css('opacity', '0');
+                    }
+
+
+                });
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
